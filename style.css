@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.header {
+  display: block;
+  max-width: 540px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.header-p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Critiques */
+.critiques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin: 80px auto;
+}
+
+/* Critique */
+.critique {
+  background-color: #ace3fc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.critique-cover {
+  width: 100%;
+}
+
+.critique-title {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.critique-p {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .critiques {
+    /* max-width: 700px; */
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 1000px) {
+  .critiques {
+    max-width: 1000px;
+  }
+}
